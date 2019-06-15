@@ -80,9 +80,36 @@ class Instructor extends Person {
     }
 }
 
+const naomi = new Instructor({
+  name: 'Naomi',
+  location: 'Abilene',
+  age: 29,
+  favLanguage: 'Python',
+  specialty: 'Front-end',
+  catchPhrase: `How you doin?`
+});
 
+const fred = new Instructor({
+  name: 'Fred',
+  location: 'Bedrock',
+  age: 37,
+  favLanguage: 'JavaScript',
+  specialty: 'Front-end',
+  catchPhrase: `Don't forget the homies`
+});
 
+const jesse = new Instructor({
+  name: 'Jesse',
+  location: 'Lubbock',
+  age: 27,
+  favLanguage: 'JavaScript',
+  specialty: 'Front-end',
+  catchPhrase: `Godfather advice for all situations.`
+});
 
+console.log(naomi);
+console.log(fred);
+console.log(jesse);
 
 // #### Student
 
@@ -124,9 +151,36 @@ class Student extends Person {
     };
 };
 
+const gabby = new Student({
+  name: 'Gabriele',
+  location: 'Abilene',
+  age: 26,
+  previousBackground: 'Banking',
+  className: 'WEBPT-7',
+  favSubjects: `English, Physical Education, Computer Lab`
+});
 
+const mikayla = new Student({
+  name: 'Mikayla',
+  location: 'Boise',
+  age: 25,
+  previousBackground: 'model',
+  className: 'WEBPT-7',
+  favSubjects: `Science, Math, Career Focus`
+});
 
+const ebeth = new Student({
+  name: 'Elizabeth',
+  location: 'Tye',
+  age: 28,
+  previousBackground: 'Janitorial Work',
+  className: 'WEBPT-7',
+  favSubjects: `Choir, English, French`
+});
 
+console.log(gabby);
+console.log(ebeth);
+console.log(mikayla);
 
 // #### Project Manager
 
@@ -141,7 +195,7 @@ class Student extends Person {
 
 
 
-class ProjectManagers extends Instructor {
+class ProjectManager extends Instructor {
     constructor(PMAtts) {
         super(PMAtts);
         this.gradClassName = PMAtts.gradClassName;
@@ -160,5 +214,40 @@ class ProjectManagers extends Instructor {
 };
 
 
+const jordan = new ProjectManager({
+    name: 'Jordan',
+    location: 'Vancouver',
+    age: 32,
+    favLanguage: 'Python',
+    specialty: 'back-end',
+    catchPhrase: `Work hard so you can play hard.`,
+    gradClassName: 'WEBPT7',
+    favInstructor: 'Jesse'
+  });
 
+  const ashlee = new ProjectManager({
+    name: 'Ashlee',
+    location: 'Dallas',
+    age: 28,
+    favLanguage: 'JavaScript',
+    specialty: 'Front-end',
+    catchPhrase: `Wisdom takes you further than feelings.`,
+    gradClassName: 'WEBPT7',
+    favInstructor: 'Fred'
+  });
+
+  const leslie = new ProjectManager({
+    name: 'Leslie',
+    location: 'Abilene',
+    age: 25,
+    favLanguage: 'Java',
+    specialty: 'back-end',
+    catchPhrase: `Eat more nachos..`,
+    gradClassName: 'WEBPT7',
+    favInstructor: 'Naomi'
+  });
+
+console.log(jordan);
+console.log(ashlee);
+console.log(leslie);
 
