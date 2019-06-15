@@ -81,30 +81,30 @@ class Instructor extends Person {
 }
 
 const naomi = new Instructor({
-  name: 'Naomi',
-  location: 'Abilene',
-  age: 29,
-  favLanguage: 'Python',
-  specialty: 'Front-end',
-  catchPhrase: `How you doin?`
+    name: 'Naomi',
+    location: 'Abilene',
+    age: 29,
+    favLanguage: 'Python',
+    specialty: 'Front-end',
+    catchPhrase: `How you doin?`
 });
 
 const fred = new Instructor({
-  name: 'Fred',
-  location: 'Bedrock',
-  age: 37,
-  favLanguage: 'JavaScript',
-  specialty: 'Front-end',
-  catchPhrase: `Don't forget the homies`
+    name: 'Fred',
+    location: 'Bedrock',
+    age: 37,
+    favLanguage: 'JavaScript',
+    specialty: 'Front-end',
+    catchPhrase: `Don't forget the homies`
 });
 
 const jesse = new Instructor({
-  name: 'Jesse',
-  location: 'Lubbock',
-  age: 27,
-  favLanguage: 'JavaScript',
-  specialty: 'Front-end',
-  catchPhrase: `Godfather advice for all situations.`
+    name: 'Jesse',
+    location: 'Lubbock',
+    age: 27,
+    favLanguage: 'JavaScript',
+    specialty: 'Front-end',
+    catchPhrase: `Godfather advice for all situations.`
 });
 
 console.log(naomi);
@@ -152,30 +152,30 @@ class Student extends Person {
 };
 
 const gabby = new Student({
-  name: 'Gabriele',
-  location: 'Abilene',
-  age: 26,
-  previousBackground: 'Banking',
-  className: 'WEBPT-7',
-  favSubjects: `English, Physical Education, Computer Lab`
+    name: 'Gabriele',
+    location: 'Abilene',
+    age: 26,
+    previousBackground: 'Banking',
+    className: 'WEBPT-7',
+    favSubjects: `English, Physical Education, Computer Lab`
 });
 
 const mikayla = new Student({
-  name: 'Mikayla',
-  location: 'Boise',
-  age: 25,
-  previousBackground: 'model',
-  className: 'WEBPT-7',
-  favSubjects: `Science, Math, Career Focus`
+    name: 'Mikayla',
+    location: 'Boise',
+    age: 25,
+    previousBackground: 'model',
+    className: 'WEBPT-7',
+    favSubjects: `Science, Math, Career Focus`
 });
 
 const ebeth = new Student({
-  name: 'Elizabeth',
-  location: 'Tye',
-  age: 28,
-  previousBackground: 'Janitorial Work',
-  className: 'WEBPT-7',
-  favSubjects: `Choir, English, French`
+    name: 'Elizabeth',
+    location: 'Tye',
+    age: 28,
+    previousBackground: 'Janitorial Work',
+    className: 'WEBPT-7',
+    favSubjects: `Choir, English, French`
 });
 
 console.log(gabby);
@@ -207,7 +207,7 @@ class ProjectManager extends Instructor {
         return `${this.name} announces to ${channel}, @channel standy times!`;
     };
 
-    debugsCode({Student}, subject) {
+    debugsCode({ Student }, subject) {
         console.log(`{name} debugs {student.name}'s code on {subject}`);
         return `{name} debugs {student.name}'s code on {subject}`;
     };
@@ -223,9 +223,9 @@ const jordan = new ProjectManager({
     catchPhrase: `Work hard so you can play hard.`,
     gradClassName: 'WEBPT7',
     favInstructor: 'Jesse'
-  });
+});
 
-  const ashlee = new ProjectManager({
+const ashlee = new ProjectManager({
     name: 'Ashlee',
     location: 'Dallas',
     age: 28,
@@ -234,9 +234,9 @@ const jordan = new ProjectManager({
     catchPhrase: `Wisdom takes you further than feelings.`,
     gradClassName: 'WEBPT7',
     favInstructor: 'Fred'
-  });
+});
 
-  const leslie = new ProjectManager({
+const leslie = new ProjectManager({
     name: 'Leslie',
     location: 'Abilene',
     age: 25,
@@ -245,7 +245,7 @@ const jordan = new ProjectManager({
     catchPhrase: `Eat more nachos..`,
     gradClassName: 'WEBPT7',
     favInstructor: 'Naomi'
-  });
+});
 
 console.log(jordan);
 console.log(ashlee);
